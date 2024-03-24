@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3f4f6;
+}
+
+.kontainer{
+    position: relative;
+    background-color: #161a20;
+    max-width: 350px;
+    width: 100%;
+    border-radius: 12px;
+    padding: 15px 15px 30px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+
+.riwayat{
+    padding: 6px 0;
+    float: right;
+    position: relative;
+}
+
+.riwayat i{
+    cursor: pointer;
+}
+
+.daftar-riwayat{
+    background-color: #fff;
+    width: 200px;
+    height: 300px;
+    list-style: none;
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 5px 10px;
+    z-index: 1;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    display: none;
+}
+
+.judul-riwayat{
+    text-align: left;
+}
+
+.riwayat.tampil .daftar-riwayat{
+    display: block;
+}
+.tampilan{
+    width: 100%;
+    height: 150px;
+    outline: none;
+    border: none;
+    text-align: right;
+    letter-spacing: 2px;
+    font-size: 35px;
+    margin-bottom: 20px;
+    background-color: #161a20;
+    color: #fff;
+}
+
+
+.tombol{
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.tombol button{
+    width: 100%;
+    height: 60px;
+    border-radius: 2px;
+    border: none;
+    font-size: 25px;
+    background-color: #242933;
+    color: #cbe1ff;
+    cursor: pointer;
+}
+
+.tombol button:active{
+    transform: scale(0.90);
+}
+
+.tombol button.operator{
+    background-color: #0060e5;
+}
+
+.tombol button.aksi-operator{
+    background-color: #363e4d;
+}
+
+@media only screen and (max-width: 600px){
+    .kontainer{
+        max-width: 300px;
+    }
+}
